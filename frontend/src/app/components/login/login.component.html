@@ -1,0 +1,12 @@
+<form [formGroup]="form" (ngSubmit)="login()">
+<div class="form-group">
+    <label>email</label>
+    <input formControlName="email"/>
+</div>
+<div class="form-group">
+    <label>senha</label>
+    <input formControlName= "senha" type="password">
+</div>
+<input type="submit"value= 'entrar'/>
+<a routerLink="/cadastro" routerLinkActive="true">cadastrar-se</a>
+</form>

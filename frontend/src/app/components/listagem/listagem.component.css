@@ -1,0 +1,12 @@
+.cartao{
+    width: 200px;
+    border: 1px solid gray;
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: blanchedalmond;
+}
+
+.grid-container{
+    grid-template-columns: auto auto auto auto;
+}

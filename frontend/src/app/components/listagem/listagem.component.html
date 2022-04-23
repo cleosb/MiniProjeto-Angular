@@ -1,0 +1,24 @@
+<div style="display: flex">
+    <div class="cadastrar">
+        <button (click)="sair()">sair</button>
+        <h3>cadastrar tarefa</h3>
+        <form [formGroup]="form" (ngSubmit)="criarTarefa()">
+            <div class="form-group">
+                <label>titulo</label>
+                <input formControlName="titulo">
+            </div>
+            <div class="form-group">
+                <label>descricao</label>
+                <input formControlName="descricao">
+            </div>
+            <input type="submit" value="criar tarefa">
+        </form>
+    </div>
+    <div class="grid-container" style="display: grid;">
+        <div *ngFor="let cartao of cartoes" class="cartao grid-item">
+            <h4>{{cartao.titulo}}</h4>
+            <p>{{cartao.descricao}}</p>
+        </div>
+    </div>
+</div>
+
